@@ -6,12 +6,13 @@ const Missions = () => {
     console.log(data)
     
     return ( 
-        <div>
+        <div className="mission-container">
             {isPending && <h1>Loading....</h1>}
             {data && data.map((data) => (
-                <div>
+                <div className="mission">
                     <h2>{data.mission_name}</h2>
                     <h3>Mission ID: {data.mission_id}</h3>
+                    <p>Description: {data.description}</p>
                 </div>
             ))}
         </div>
