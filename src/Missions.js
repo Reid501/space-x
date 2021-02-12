@@ -10,8 +10,9 @@ const Missions = ({ setSelectedMission }) => {
             {isPending && <h1>Loading....</h1>}
             {data && data.map((data) => (
                 <div className="mission" key={data.mission_id}>
-                    <h2>{data.mission_name}</h2>
-                    <h3>Mission ID: {data.mission_id}</h3>
+                    <h3>{data.mission_name}</h3>
+                    <h4>Mission ID: {data.mission_id}</h4>
+                    <h4>Manufacturers: <span>{data.manufacturers[0]}</span></h4>
                     <button onClick={() => setSelectedMission(data.description)}>Mission Info</button>
                 </div>
             ))}
