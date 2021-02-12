@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Capsules from "./Rockets";
 import Header from "./Header";
 import Info from "./Info";
 import Missions from "./Missions";
@@ -14,6 +15,7 @@ const [selectedMission, setSelectedMission] = useState(null);
       { selectedMission && <Modal selectedMission={selectedMission} setSelectedMission={setSelectedMission}/>}
       <div className="lower-sec">
         <Info />
+        <Capsules />
       </div>
     </div>
   );

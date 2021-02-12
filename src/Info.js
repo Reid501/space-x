@@ -2,11 +2,10 @@ import useFetch from "./useFetch";
 
 const Info = () => {
     const { data, isPending } = useFetch('https://api.spacexdata.com/v3/info')
-    console.log(data)
 
     return ( 
         <div className="info">
-            <h1>Space X Info</h1>
+            <h1>Company Data</h1>
             {isPending && <h1>Loading....</h1>}
             {data && <div>
                         <h3>Founder: {data.founder}</h3>
