@@ -1,29 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: aliceblue;
+  color: rgb(48, 208, 248);
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+span{
+  font-weight: 700;
+  font-size: larger;
 }
 
 body {
-  background-color: blue;
+    background: radial-gradient(#05092c, #080333);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
+
+/* Header */
+
+.header h1,
+.header h2 {
+  padding: 10px;
+}
+
+.header h2{
+  margin-bottom: 20px;
+}
+
+.modal-header {
+  padding: 20px;
+}
+
+/* Missions style */
 
 .mission-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.mission-container h2{
+  margin: 10px;
+}
+
+.mission-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .mission-container,
 .mission {
-  border: aliceblue 1px solid;
+  border: rgb(48, 208, 248) 1px solid;
 }
 
 .mission {
   margin: 20px;
+  padding: 30px;
+}
+
+.mission h4 {
+  padding: 10px;
+}
+
+.mission button {
+  border: rgb(48, 208, 248) 1px solid;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0);
+  margin: 15px;
+}
+
+.mission button:hover {
+  border: rgb(48, 208, 248) 1px solid;
+  filter: brightness(110%);
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.205);
+  cursor: pointer;
 }
 
 /* Modal Styles */
@@ -46,4 +108,67 @@ body {
   border: 1px white solid;
   padding: 40px 20px;
   background-color: blue;
+}
+
+/* Lower Section style */
+
+.lower-sec {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Info style */
+
+.info {
+  border: rgb(48, 208, 248) 1px solid;
+  width: 35%;
+  margin: 20px 20px 20px 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-container h4 {
+  padding: 5px;
+}
+
+/* Rocket Style */
+
+.rocket-data {
+  border: rgb(48, 208, 248) 1px solid;
+  width: 65%;
+  margin: 20px 0px 20px 20px;
+}
+
+.rocket-data h2 {
+  padding: 10px;
+}
+
+.rocket p {
+  padding: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .mission-box,
+  .lower-sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info,
+  .rocket-data {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .backdrop div {
+    width: 90%;
+  }
 }

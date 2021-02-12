@@ -8,14 +8,16 @@ const Missions = ({ setSelectedMission }) => {
         <div className="mission-container">
             <h2>Missions</h2>
             {isPending && <h1>Loading....</h1>}
+            <div className="mission-box">
             {data && data.map((data) => (
                 <div className="mission" key={data.mission_id}>
-                    <h3>{data.mission_name}</h3>
+                    <h4>{data.mission_name}</h4>
                     <h4>Mission ID: {data.mission_id}</h4>
                     <h4>Manufacturers: <span>{data.manufacturers[0]}</span></h4>
                     <button onClick={() => setSelectedMission(data.description)}>Mission Info</button>
                 </div>
             ))}
+            </div>
         </div>
      );
 }

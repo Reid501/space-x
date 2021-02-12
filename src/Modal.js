@@ -9,7 +9,7 @@ const Modal = ({ selectedMission, setSelectedMission }) => {
     return ( 
         <div className="backdrop" onClick={handleClick}>
             <div>
-                <h2>Mission Details</h2>
+                <h2 className="modal-header">Mission Details</h2>
                 <p>{selectedMission}</p>
             </div>
         </div>

@@ -6,11 +6,11 @@ const Rockets = () => {
 
     return ( 
         <div className="rocket-data">
-            <h1>Rockets</h1>
+            <h2>Rockets</h2>
             {isPending && <h1>Loading....</h1>}
             {data && data.map((data) => (
                 <div className="rocket" key={data.id}>
-                    <h4>Name: {data.rocket_name}</h4>
+                    <h4><span>Name: {data.rocket_name}</span></h4>
                     <p>{data.description}</p>
                 </div>
             ))}
