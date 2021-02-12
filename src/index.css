@@ -25,3 +25,25 @@ body {
 .mission {
   margin: 20px;
 }
+
+/* Modal Styles */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop div{
+  width: 40%;
+  margin: 0 auto;
+  border: 1px white solid;
+  padding: 40px 20px;
+  background-color: blue;
+}
