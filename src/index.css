@@ -169,6 +169,14 @@ body {
   }
 
   .backdrop div {
-    width: 90%;
+    width: 85%;
+  }
+
+  .backdrop div p {
+    font-size: 10px;
+  }
+
+  .backdrop div h2 {
+    font-size: 14px;
   }
 }
