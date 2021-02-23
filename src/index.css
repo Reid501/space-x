@@ -171,6 +171,7 @@ body {
   .backdrop div {
     width: 85%;
     overflow: auto;
+    max-height: 600px;
   }
 
   .backdrop div p {
